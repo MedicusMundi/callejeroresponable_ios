@@ -48,12 +48,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.list', {
+      url: '/list',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-list': {
+          templateUrl: 'templates/tab-list.html',
+          controller: 'ListCtrl'
         }
       }
     })
@@ -66,6 +66,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
+  .state('tab.map', {
+    url: '/map',
+    views: {
+      'tab-map': {
+        templateUrl: 'templates/tab-map.html',
+        controller: 'MapController'
+      }
+    }
+  })
 
   .state('tab.account', {
     url: '/account',
